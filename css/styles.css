@@ -57,6 +57,7 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  z-index: 999;
 }
 
 .menu__burger > .burger-button {
@@ -315,11 +316,11 @@
 .contacts__left h3 {
   font-size: 20px;
   line-height: 130%;
-  margin-bottom: 37.4px;
+  margin-bottom: 38px;
 }
 
 .contacts__info > *:not(:last-child) {
-  margin-bottom: 37.4px;
+  margin-bottom: 37px;
 }
 
 .contacts__info > *:nth-child(3),
@@ -348,6 +349,10 @@
 
 .contacts__google-map_mobile {
   height: 570px;
+}
+
+#contacts-main {
+  margin-bottom: 152px;
 }
 
 #mapDiv {
@@ -601,6 +606,7 @@ body {
 
   .menu-p {
     -webkit-column-gap: 28px;
+    column-gap: 28px;
     row-gap: 11px;
   }
 
@@ -672,6 +678,10 @@ body {
     left: 0;
     width: 100vw;
     margin-left: calc(var(--adapt_padding) * -1);
+  }
+
+  #contacts-main {
+    margin-bottom: 18px;
   }
 
   .footer {

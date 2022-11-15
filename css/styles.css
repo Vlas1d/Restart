@@ -459,6 +459,7 @@
 .spare-block {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .spare-block__item {
@@ -484,12 +485,13 @@
 .spare-block__item_upper > img,
 .spare-block__item_upper .spi-image {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   width: 100%;
 }
 
 .spare-block__item_upper > img {
   margin-bottom: 28px;
+  width: 100%;
 }
 
 .spare-block__item_upper .spi-image img:first-child {
@@ -497,6 +499,11 @@
   position: absolute;
   top: 0;
   right: 0;
+  height: 100%;
+}
+
+.spare-block__item_upper .spi-image img:last-child {
+  width: 100%;
 }
 
 .spare-block__item_upper .spi-bg {
@@ -628,6 +635,10 @@ body {
   }
 
   .contacts_br {
+    display: none;
+  }
+
+  .spi-br {
     display: none;
   }
 }
@@ -914,6 +925,39 @@ body {
     margin: 0px 0px 30px;
   }
 
+  .spare-parts {
+    padding-top: 0px;
+  }
+
+  .spare-parts__head {
+    display: none;
+  }
+
+  .spare-block__item {
+    width: 339px;
+  }
+
+  .spare-block__item_upper > img,
+  .spare-block__item_upper .spi-image {
+    margin-bottom: 12px;
+  }
+
+  .spare-block__item_upper > h3 {
+    margin-bottom: 7px;
+  }
+
+  .spare-block__item_upper > span {
+    margin-bottom: 25px;
+  }
+
+  .spare-block__item_upper > hr {
+    margin-bottom: 24.5px;
+  }
+
+  .spare-block__item_bottom {
+    margin-top: 6px;
+  }
+
   .footer {
     min-height: 200px;
     padding-bottom: 20px;
@@ -951,6 +995,10 @@ body {
 @media (max-width: 710px) {
   .mini-block {
     flex: 1 1 auto;
+  }
+
+  .spare-block__item {
+    margin: 0px auto;
   }
 }
 
@@ -1053,6 +1101,27 @@ body {
     margin-top: 24px;
   }
 
+  .spare-block__item {
+    margin-bottom: 25px;
+  }
+
+  .spare-block__item_upper > img,
+  .spare-block__item_upper .spi-image {
+    margin-bottom: 10px;
+  }
+
+  .spare-block__item_upper > h3 {
+    margin-bottom: 2px;
+  }
+
+  .spare-block__item_upper > span {
+    margin-bottom: 20px;
+  }
+
+  .spare-block__item_upper > hr {
+    margin-bottom: 17px;
+  }
+
   .footer {
     min-height: 200px;
     padding-bottom: 15px;
@@ -1072,6 +1141,7 @@ body {
 
   .main_ {
     margin-bottom: 12px;
+    margin-top: 171px;
   }
 }
 
@@ -1131,5 +1201,11 @@ body {
 
   .sto-offers__image > img {
     margin-left: calc((var(--container_width) - 100vw) / 2);
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 992.1px) {
+  .spare-block__item {
+    margin: 0px auto;
   }
 }

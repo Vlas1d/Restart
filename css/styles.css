@@ -458,6 +458,7 @@
 
 .spare-block {
   display: flex;
+  justify-content: space-between;
 }
 
 .spare-block__item {
@@ -480,8 +481,26 @@
   box-shadow: 2px 2px 5px #999;
 }
 
-.spare-block__item_upper > img {
+.spare-block__item_upper > img,
+.spare-block__item_upper .spi-image {
+  position: relative;
   margin-bottom: 27px;
+  width: 100%;
+}
+
+.spare-block__item_upper > img {
+  margin-bottom: 28px;
+}
+
+.spare-block__item_upper .spi-image img:first-child {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.spare-block__item_upper .spi-bg {
+  z-index: 9 !important;
 }
 
 .spare-block__item_upper > h3 {

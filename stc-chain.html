@@ -248,14 +248,22 @@
             <h1 class="stc-form__text">Заповніть форму<br>
                 для консультації або запису<br>
                 на діагностику/ремонт</h1>
-            <form class="stc-form__form sf-form" action="">
+            <form class="stc-form__form sf-form" action="" id="form1">
                 <h3>Введіть, будь ласка, ваші контактні дані</h3>
                 <label>Ваше ім'я<b>*</b></label>
-                <input type="text">
+                <input type="text" name="person-name">
                 <label>Телефон<b>*</b></label>
-                <input type="tel">
+                <input type="tel" name="phone-number">
                 <label>Місто<b>*</b></label>
-                <input type="">
+                <select form="form1" name="city-select">
+                    <option value=""></option>
+                    <option value="1">Івано-Франківськ</option>
+                    <option value="2">Київ</option>
+                    <option value="3">Одесса</option>
+                    <option value="4">Львів</option>
+                    <option value="5">Херсон</option>
+                    <option value="6">Житомир</option>
+                </select>
                 <input type="submit">
             </form>
         </section>
@@ -384,9 +392,7 @@
             © Restart 2019
         </span>
 
-        <script src="script/script.min.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script defer src="script/script.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     </section>
 </footer>

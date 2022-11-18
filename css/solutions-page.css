@@ -42,6 +42,7 @@
   width: 100%;
   position: relative;
   min-height: 514px;
+  order: 2;
 }
 
 .sto-offers__image > img {
@@ -51,6 +52,7 @@
 
 .sto-offers__list {
   margin-top: 35px;
+  order: 1;
 }
 
 .offers-box {
@@ -137,6 +139,24 @@
   .offers-box__item {
     flex: 0 0 0;
     margin: 0px 0px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sto-offers > h3 {
+    text-align: center;
+  }
+
+  .sto-offers__image {
+    order: 1;
+  }
+
+  .sto-offers__list {
+    order: 2;
+  }
+
+  .offers-box {
+    grid-template-columns: 1fr;
   }
 }
 

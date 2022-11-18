@@ -47,7 +47,7 @@
 
 .menu__burger {
   position: fixed;
-  display: block;
+  display: block !important;
   top: 70px;
   left: 50%;
   transform: translate(-50%, 0);

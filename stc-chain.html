@@ -248,24 +248,28 @@
             <h1 class="stc-form__text">Заповніть форму<br>
                 для консультації або запису<br>
                 на діагностику/ремонт</h1>
-            <form class="stc-form__form sf-form" action="" id="form1">
-                <h3>Введіть, будь ласка, ваші контактні дані</h3>
-                <label>Ваше ім'я<b>*</b></label>
-                <input type="text" name="person-name">
-                <label>Телефон<b>*</b></label>
-                <input type="tel" name="phone-number">
-                <label>Місто<b>*</b></label>
-                <select form="form1" name="city-select">
-                    <option value=""></option>
-                    <option value="1">Івано-Франківськ</option>
-                    <option value="2">Київ</option>
-                    <option value="3">Одесса</option>
-                    <option value="4">Львів</option>
-                    <option value="5">Херсон</option>
-                    <option value="6">Житомир</option>
-                </select>
-                <input type="submit">
-            </form>
+            <div class="stc-form__form">
+                <form class="sf-form" action="" id="form1">
+                    <h3>Введіть, будь ласка,<br> ваші контактні дані</h3>
+                    <hr>
+                    <div>
+                        <label for="name">Ваше ім'я <b>*</b></label>
+                        <input id="name" type="text" name="person-name" placeholder="Введіть ваше ім’я"
+                            required="required">
+                        <label for="tel-phone">Телефон <b>*</b></label>
+                        <input id="tel-phone" type="tel" name="phone-number" placeholder="Ваш контактний номер телефону"
+                            required="required">
+                        <label for="city">Місто <b>*</b></label>
+                        <select id="city" form="form1" name="city-select" required="required">
+                            <option value="">Оберіть місто зі списку</option>
+                            <option value="1">Рівне</option>
+                            <option value="2">Луцьк</option>
+                            <option value="2">Інше</option>
+                        </select>
+                        <button type="submit" id="stc-form__button">Замовити<br> телефонний дзвінок</button>
+                    </div>
+                </form>
+            </div>
         </section>
         <section class="stc-serv container_">
             <h3 class="stc-serv__head">Мережа СЦТ Restart (Рестарт) надає наступні послуги</h3>
@@ -299,7 +303,7 @@
                             <li>• продаж компонентів стартера</li>
                         </ul>
                     </div>
-                    <span>Підібрати стартер та деталі стартера можна в <a href="#">інтернет-магазині</a></span>
+                    <span>Підібрати стартер та деталі стартера можна в <br><a href="#">інтернет-магазині</a></span>
                 </div>
 
                 <div class="stc-serv__content_block">
@@ -330,12 +334,33 @@
                             <li>• продаж компонентів генератора</li>
                         </ul>
                     </div>
-                    <span>Підібрати генератор та деталі генератора можна в <a href="#">інтернет-магазині</a></span>
+                    <span>Підібрати генератор та деталі генератора можна в <br><a href="#">інтернет-магазині</a></span>
+                </div>
+
+                <div class="stc-serv__content_block">
+                    <span>Кондиціонери</span>
+                    <div class="stc-serv__list ss-list">
+                        <ul class="ss-list__item">
+                            <li>• діагностика системи кондиціонування азотом</li>
+                            <li>• ремонт системи кондиціонування</li>
+                            <li>• заправка кондиціонера фреоном</li>
+                            <li>• дозаправка кондиціонера фреоном</li>
+                            <li>• антибактеріальна чистка систем кондиціонування</li>
+                            <li>• озонування салону авто</li>
+                        </ul>
+                        <ul class="ss-list__item">
+                            <li>• заміна діодного моста</li>
+                            <li>• заміна статора генератора</li>
+                            <li>• заміна ротора генератора</li>
+                            <li>• заміна інерційного шківа</li>
+                        </ul>
+                    </div>
+                    <span>Підібрати генератор та деталі генератора можна в <br><a href="#">інтернет-магазині</a></span>
                 </div>
 
                 <div class="stc-serv__content_block">
                     <div class="stc-serv__list ss-list">
-                        <ul class="ss-list__item">
+                        <ul class="ss-list__item no-mobile">
                             <li>Кондиціонери</li>
                             <li>• діагностика системи кондиціонування азотом</li>
                             <li>• ремонт системи кондиціонування</li>
@@ -350,7 +375,7 @@
                             <li>• заряд автомобільних акумуляторів</li>
                         </ul>
                     </div>
-                    <span>Підібрати запчастини до системи кондиціонування можна в
+                    <span class="no-mobile">Підібрати запчастини до системи кондиціонування можна в
                         <a href="#">інтернет-магазині</a></span>
                 </div>
             </div>

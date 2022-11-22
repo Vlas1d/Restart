@@ -92,8 +92,23 @@
   justify-content: center;
 }
 
+.menu__item:hover {
+  background-color: #333;
+  color: #999;
+  transform: scale(1, 1.55);
+  border-radius: 5px;
+}
+
+.menu__item:hover .menu__link {
+  transform: scale(1, 0.7);
+}
+
 .menu__link {
   color: inherit;
+}
+
+.menu__link:hover {
+  color: #999;
 }
 
 .footer {
@@ -242,6 +257,17 @@ body {
 
   .menu__list > *:first-child {
     border-right: 0px;
+  }
+
+  .menu__item:hover {
+    transform: scale(1);
+    background-color: #333;
+    color: #999;
+    border-radius: 5px;
+  }
+
+  .menu__item:hover .menu__link {
+    transform: scale(1);
   }
 
   .footer {

@@ -100,7 +100,7 @@
 }
 
 .menu__item:hover .menu__link {
-  transform: scale(1, 0.7);
+  transform: scale(1, 0.65);
 }
 
 .menu__link {
@@ -200,6 +200,14 @@ body {
   max-width: var(--container_width);
   margin-left: auto;
   margin-right: auto;
+}
+
+.video-box-hide {
+  display: none;
+}
+
+.video-box-show {
+  display: initial;
 }
 
 @media (min-width: 992.1px) {

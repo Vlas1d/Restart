@@ -202,14 +202,6 @@ body {
   margin-right: auto;
 }
 
-.video-box-hide {
-  display: none;
-}
-
-.video-box-show {
-  display: initial;
-}
-
 @media (min-width: 992.1px) {
   .menu__burger {
     display: none;

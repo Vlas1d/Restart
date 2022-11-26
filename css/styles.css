@@ -93,24 +93,19 @@
   justify-content: center;
 }
 
-.menu__item:hover {
-  transition: all 0.2s ease 0s;
-  background-color: #333;
-  color: #999;
-  transform: scale(1, 1.55);
-  border-radius: 5px;
-}
-
-.menu__item:hover .menu__link {
-  transform: scale(1, 0.65);
-}
-
 .menu__link {
   color: inherit;
+  flex: 1 1 100%;
+  text-align: center;
+  line-height: 500%;
 }
 
 .menu__link:hover {
+  transform: scale(1);
+  transition: all 0.2s ease 0s;
+  background-color: #333;
   color: #999;
+  border-radius: 5px;
 }
 
 .footer {

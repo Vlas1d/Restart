@@ -836,6 +836,17 @@
     height: 185px;
   }
 
+  .sv-box__item_video > img,
+  .sv-box__item_video > picture img {
+    width: auto;
+    height: 100%;
+  }
+
+  .sv-box__item_video > picture {
+    width: auto;
+    height: 100%;
+  }
+
   .stc-form {
     margin-top: 19px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 24.43%, rgba(0, 0, 0, 0.551004) 32.53%, rgba(0, 0, 0, 0.40087) 40.63%, rgba(0, 0, 0, 0.19913) 48.73%, rgba(0, 0, 0, 0.0489959) 66.83%, rgba(0, 0, 0, 0) 74.93%), url("../img/stc-background-mobile.jpg");
